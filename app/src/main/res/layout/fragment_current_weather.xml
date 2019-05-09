@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#888BC34A"
+        tools:context=".fragments.CurrentWeatherFragment"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+
+            <!-- TODO: Update blank fragment layout -->
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/placeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="detecting......"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/iconIV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/tempTV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="detecting......"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    />
+
+                <RadioGroup
+                    android:layout_weight="2"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/temperatureRG"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:checked="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/celsiusRB"
+                        android:text="Celsius"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/kelvinRB"
+                        android:text="Kelvin"
+                        />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/descriptionTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="detecting......"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:id="@+id/dateTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="detecting......"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/addressTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="detecting......"
+                android:textSize="20sp"
+                android:background="#BCEC86"
+                />
+
+            <TableLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/cell_shape"
+                        android:layout_weight="1"
+                        android:id="@+id/wind_nameTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Wind"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:id="@+id/wind_valueTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="detecting......"
+                        android:textSize="10sp"
+                        android:background="@drawable/cell_shape"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/cell_shape"
+                        android:layout_weight="1"
+                        android:id="@+id/cloud_nameTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Cloudiness"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:id="@+id/cloud_valueTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="detecting......"
+                        android:textSize="10sp"
+                        android:background="@drawable/cell_shape"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/cell_shape"
+                        android:layout_weight="1"
+                        android:id="@+id/pressure_nameTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Pressure"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:id="@+id/pressure_valueTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="detecting......"
+                        android:textSize="10sp"
+                        android:background="@drawable/cell_shape"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/cell_shape"
+                        android:layout_weight="1"
+                        android:id="@+id/humidity_nameTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Humidity"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:id="@+id/humidity_valueTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="detecting......"
+                        android:textSize="10sp"
+                        android:background="@drawable/cell_shape"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/cell_shape"
+                        android:layout_weight="1"
+                        android:id="@+id/sunrise_nameTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Sunrise"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:id="@+id/sunrise_valueTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="detecting......"
+                        android:textSize="10sp"
+                        android:background="@drawable/cell_shape"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/cell_shape"
+                        android:layout_weight="1"
+                        android:id="@+id/sunrset_nameTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Sunset"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:id="@+id/sunset_valueTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="detecting......"
+                        android:textSize="10sp"
+                        android:background="@drawable/cell_shape"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/cell_shape"
+                        android:layout_weight="1"
+                        android:id="@+id/geo_coords_nameTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Geo coords"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:id="@+id/geo_coords_valueTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="detecting......"
+                        android:textSize="10sp"
+                        android:background="@drawable/cell_shape"
+                        />
+
+                </TableRow>
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

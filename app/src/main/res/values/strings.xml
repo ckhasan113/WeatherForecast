@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WeatherForecast</string>
+
+    <string name="api_key0">db2ec4602bc3cd83a10abfc04ebc937c</string>
+
+    <string name="weatherApi_get_from_sir">380199723cebdb85ef2e16cc30cee5b6</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
